@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.HeroImage {
+    height: 100vh;
+    background-image: url("https://wallpaperbat.com/img/9725956-dark-siders-game-wallpaper-hd-games.jpg");
+    background-size: cover;
+}
+
+.Projetos {
+    height: 100vh;
+}
+
+.Disciplina {
+    height: 100vh;
+}
+
+#Principal {
+    position: absolute;
+    top: 25px;
+    left: 45px;
+}
+
+#Principal ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    font-size: larger;
+}
+
+#Principal ul li a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+#Navegacao {
+    display: flex;
+    flex-direction: row;
+}

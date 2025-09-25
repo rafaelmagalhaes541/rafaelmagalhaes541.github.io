@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alemanha-Munique</title>
+    <style>
+        body {
+            text-align: center;
+            margin-left: 50px;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration-style: none;
+            color: black;
+        }
+
+        .Fotografias {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .Fotografias img {
+            width: 150;
+            border-radius: 20px;
+        }
+
+        .poema p:nth-child(odd) {
+            color: darkred;
+            font-style: italic;
+        }
+
+        .poema p:nth-child(even){
+            color: darkblue;
+            font-weight: bold;
+        }
+
+        iframe {
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>MUNIQUE</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="local.html">Localização</a>
+            <a href="multimedia.html">Multimédia</a>
+            <a href="info.html">Informação</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Multimédia</h2>
+        <p>Nesta área encontra contéudos multimédia!!!</p>
+        <p>
+            <a href="#fotografias"></a>
+            <a href="#video"></a>
+            <a href="#poema"></a>
+        </p>
+        <section>
+            <h3 id="fotografias">Fotografias</h3>
+            <div class="Fotografias">
+                <img src="images/1.jpg" alt="castelo na floresta">
+                <img src="images/2.jpg" alt="museu de historia">
+                <img src="images/3.jpg" alt="paisagem panoramica">
+                <img src="images/4.jpg" alt="praça">
+                <img src="images/5.jpg" alt="mosteiro antigo">
+                <img src="images/6.jpg" alt="paisagem invernal">
+                <img src="images/7.jpg" alt="estádio de munique">
+                <img src="images/8.jpg" alt="avenida principal">
+            </div>
+        </section>
+        <section>
+            <div class="Video">
+                <h3 id="video">Video-Munique</h3>
+                <iframe width="550" height="350"
+                    src="https://www.youtube.com/embed/aztT-sZp3Go?si=-JKTaCg2Hh8Mmaky&amp;start=319"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section>
+            <h3 id="poema">Poesia</h3>
+            <div class="poema">
+                <p>Entre rios e montes a brilhar,</p>
+                <p>Munique sabe encantar,</p>
+                <p>torres góticas erguem-se ao céu,</p>
+                <p>história e futuro num mesmo véu.</p>
+                <p>Na Marienplatz ecoa a canção,</p>
+                <p>do Glockenspiel, pura tradição.</p>
+                <p>E no outono, em festa e alegria,</p>
+                <p>a Oktoberfest enche o dia.</p>
+            </div>
+        </section>
+        <p>Munique-Alemanha</p>
+    </main>
+    <footer>
+        <p>DIW 2025</p>
+    </footer>
+</body>
+
+</html>

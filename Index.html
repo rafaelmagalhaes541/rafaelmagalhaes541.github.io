@@ -1,53 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rafael Magalhães</title>
-    <style>
-        img {
-            height: 300px; 
-            width: 300px;
-        }
-
-        body{
-            background: rgb(187, 200, 186);
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
-        <h1>Primeira Página Web!</h1>
-    </header>    
+        <h1></h1>
+        <nav id="Principal">
+            <ul>
+                <li><a href="#HeroImage">Sobre</a></li>
+                <li><a href="#Projetos">Trabalhos</a></li>
+                <li><a href="#Disciplina">Disciplina</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
-        <p>Eis a minha primeira página</p>
-        <p>
-            Na Unidade Curricular de 
-            <a href="https://moodle.ensinolusofona.pt/course/view.php?id=11232" target="_blank">
-                Desenvolvimento de Interfaces Web
-            </a>
-            abordaremos as seguintes tecnologias Web &#127760
-        </p>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React e Next.js</li>
-        </ul>
-        <p>Iremos criar soluções criativas</p>
-        <img src="images/diw.svg" alt="Desenvolvimento de Interfaces Web">
-        
-        <p>Conheça os meus projetos:</p>
-        <ul>
-            <li><a href="/Lab1/index.html">Lab 1</a></li>
-            <li><a href="/Lab2/index.html">Lab 2</a></li>
-        </ul>    
+        <section class="HeroImage">
+            
+        </section>
+
+        <section class="Projetos">
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React e Next.js</li>
+            </ul>
+            <nav>
+                <ul id="Navegacao">
+                    <li><a href="/Lab1/index.html">Lab 1</a></li>
+                    <li><a href="/Lab2/index.html">Lab 2</a></li>
+                    <li><a href="/Lab3/index.html">Lab 3</a></li>
+                </ul>
+            </nav>
+
+        </section>
+
+        <section class="Disciplina">
+            <p>
+                Na Unidade Curricular de
+                <a href="https://moodle.ensinolusofona.pt/course/view.php?id=11232" target="_blank">
+                    Desenvolvimento de Interfaces Web
+                </a>
+                abordaremos as seguintes tecnologias Web &#127760
+            </p>
+        </section>
     </main>
-    
+
     <footer>
         <p>Universidade Lusófona © 2025</p>
     </footer>
 
 </body>
+
 </html>
