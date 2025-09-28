@@ -11,10 +11,55 @@
 
 .Projetos {
     height: 100vh;
+    background-image: url("https://www.solidbackgrounds.com/images/1920x1080/1920x1080-black-solid-color-background.jpg");
+    background-size: cover;
 }
 
 .Disciplina {
     height: 100vh;
+    background-image: url("https://wallpapercave.com/wp/wp3199109.jpg");
+    background-size: cover;
+}
+
+footer{
+    background-color: black;
+}
+
+#paginaInicial{
+    color: white;
+    position: absolute;
+    bottom: 65%; 
+    left: 140px;   
+    font-size: 36px;
+}
+
+#intro{
+    color: white;
+    position: absolute;
+    bottom: 50%; 
+    left: 140px;   
+    font-size: 26px;
+}
+
+#projetos{
+    color: white;
+    margin-left: 100px;
+    display: flex; 
+}
+
+.Projetos p{
+    margin-left: 100px;  
+    margin-top: 40px;    
+    color: white;
+    font-size: large;
+}
+
+.Projetos nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: -30%;
 }
 
 #Principal {
@@ -26,10 +71,15 @@
 #Principal ul {
     list-style: none;
     margin: 0;
-    padding: 0;
     display: flex;
     gap: 20px;
     font-size: larger;
+}
+
+#Principal ul li a:hover{
+    padding: 8px 15px;      
+    border-radius: 6px; 
+    background: rgb(66, 2, 2);
 }
 
 #Principal ul li a{
