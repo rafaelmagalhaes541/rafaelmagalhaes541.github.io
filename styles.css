@@ -21,35 +21,40 @@
     background-size: cover;
 }
 
-footer{
+footer {
     background-color: black;
 }
 
-#paginaInicial{
+#paginaInicial {
     color: white;
     position: absolute;
-    bottom: 65%; 
-    left: 140px;   
+    bottom: 65%;
+    left: 140px;
     font-size: 36px;
 }
 
-#intro{
+#intro {
     color: white;
     position: absolute;
-    bottom: 50%; 
-    left: 140px;   
+    bottom: 50%;
+    left: 140px;
     font-size: 26px;
 }
 
-#projetos{
+#projetos {
     color: white;
     margin-left: 100px;
-    display: flex; 
+    display: flex;
 }
 
-.Projetos p{
-    margin-left: 100px;  
-    margin-top: 40px;    
+.Projetos h1{
+    position: relative;
+    top: 20px;
+}
+
+.Projetos p {
+    margin-left: 100px;
+    margin-top: 40px;
     color: white;
     font-size: large;
 }
@@ -76,18 +81,67 @@ footer{
     font-size: larger;
 }
 
-#Principal ul li a:hover{
-    padding: 8px 15px;      
-    border-radius: 6px; 
+#Principal ul li a:hover {
+    padding: 8px 15px;
+    border-radius: 6px;
     background: rgb(66, 2, 2);
 }
 
-#Principal ul li a{
+#Principal ul li a {
     color: aliceblue;
     text-decoration: none;
 }
 
 #Navegacao {
+    list-style: none;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+}
+
+#Navegacao li {
+    background: #ffb6c1;
+    border-radius: 12px;
+    padding: 15px 20px;
+    width: 400px;
+    height: 50px;
+}
+
+#Navegacao li:nth-child(2){
+    position: relative;
+    top: 100px;
+}
+
+#Navegacao li:nth-child(3){
+    position: relative;
+    right: 200px;
+}
+
+#Navegacao li:nth-child(1){
+    position: relative;
+    left: 200px;
+}
+
+#Navegacao li:hover {
+    transform: translateY(-5px);
+}
+
+#Navegacao a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+#Navegacao p {
+    font-size: small;
+    margin: 5px;
+    color: #333;
+}
+
+#disciplina {
+    color: white;
+    position: relative;
+    margin-left: 20px;
+    font-size: larger;
 }
