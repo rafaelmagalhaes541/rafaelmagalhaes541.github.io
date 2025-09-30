@@ -4,32 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Alemanha-Munique</title>
-    <style>
-        body {
-            text-align: center;
-        }
-
-        nav a {
-            margin: 0 10px;
-            text-decoration-style: none;
-            color: black;
-        }
-
-        @media (max-width: 1000px) {
-            section{
-                flex-direction: column;
-            }
-        }
-
-        iframe{
-            border-radius: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-    <header>
-        <h1>MUNIQUE</h1>
+<body class="local">
+    <header class="cabeçalho2">
+        <h1><span>MUNIQUE</span> <span class="localizacao">&#9776;</span></h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="local.html">Localização</a>
@@ -39,17 +19,28 @@
     </header>
     <main>
         <h2>Localização</h2>
-        <section>
-            <div>
-                <p>Munique é a capital da Baviera, no sul da Alemanha, localizada às margens do rio Isar e perto dos Alpes.</p>
+        <section class="conteudo-local">
+            <div class="detalhes">
+                <p>Munique é a capital da Baviera, situada no sul da Alemanha.</p>
+                <p>Está localizada às margens do rio Isar e próxima dos Alpes.</p>
                 <p>Com cerca de 1,5 milhão de habitantes, é a terceira maior cidade do país.</p>
-                <p>Situa-se a cerca de 500 metros de altitude, numa planície elevada, e combina tradição cultural com</p>    
-                <p>modernidade,sendo famosa pela Oktoberfest e pela sua importância económica e científica.</p>    
+                <p>Encontra-se a aproximadamente 500 metros de altitude, numa planície elevada.</p>
+                <p>A posição geográfica faz de Munique um ponto estratégico entre a tradição cultural e a modernidade europeia.</p>
+                <p>A cidade é conhecida pela Oktoberfest, pela sua relevância económica e pelo dinamismo científico.</p>
+                <p>O clima é continental húmido, com invernos frios e verões agradáveis.</p>
+                <p>Devido à sua proximidade dos Alpes, Munique é um ponto de partida para esportes de inverno.</p>
+                <p>O aeroporto internacional Franz Josef Strauss conecta a cidade a destinos em todo o mundo.</p>
+                <p>A rede de transportes públicos é moderna e eficiente, incluindo metro, elétricos e autocarros.</p>
+                <p>Munique combina edifícios históricos com arquitetura contemporânea.</p>
+                <p>Os jardins e parques, como o Englischer Garten, fazem parte da identidade urbana.</p>
+                <p>A cidade situa-se numa região rica em tradição cultural, científica e tecnológica.</p>
+                <p>A localização central na Europa favorece o turismo e os negócios internacionais.</p>
+                <p>É também sede de universidades de prestígio e centros de investigação de ponta.</p>
             </div>
-            <div>
+            <div class="maps">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d171637.40863586884!2d11.400668553584275!3d48.145116735342974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e75f9a38c5fd9%3A0x10cb84a7db1987d!2sMunique%2C%20Alemanha!5e0!3m2!1spt-PT!2spt!4v1758190551453!5m2!1spt-PT!2spt"
-                    width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                    width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
