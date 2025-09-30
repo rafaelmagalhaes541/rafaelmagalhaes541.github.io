@@ -192,6 +192,27 @@ iframe {
     border-radius: 20px;
 }
 
+.fotos {
+    height: 100vh;
+    background-color: bisque;
+}
+
+.videos {
+    height: 100vh;
+    background-color: bisque;
+}
+
+.poemas {
+    height: 100vh;
+    background-color: bisque;
+}
+
+.postal {
+    height: 100vh;
+    background-image: url("https://s2.best-wallpaper.net/wallpaper/1920x1080/2005/City-Munich-Germany-buildings-street-dusk_1920x1080.jpg");
+    background-size: cover;
+}
+
 .multimedia {
     text-align: center;
 }
@@ -204,6 +225,11 @@ iframe {
     background: whitesmoke;
     width: 100%;
     height: 100%;
+}
+
+.multimediaPage {
+    display: none;
+    font-size: 24px;
 }
 
 .multimedia h1 {
@@ -232,6 +258,51 @@ iframe {
     color: blue;
 }
 
+@media (max-width: 600px) {
+
+    .cabeçalho3,
+    .multimedia nav {
+        flex-direction: column;
+    }
+
+    .multimedia nav {
+        display: none;
+    }
+
+    .cabeçalho3:hover nav {
+        display: flex;
+    }
+
+    .multimedia {
+        display: block;
+    }
+}
+
+.multimedia main h2 {
+    position: relative;
+    top: 30px;
+    font-size: xx-large;
+}
+
+.multimedia main p {
+    position: relative;
+    top: 30px;
+}
+
+.multimedia main h3 {
+    position: relative;
+    top: 50px;
+}
+
+.multimedia main .fotos .Fotografias {
+    position: relative;
+    top: 70px;
+}
+
+.multimedia .fotos #fotografias {
+    font-size: large;
+}
+
 .Fotografias {
     display: flex;
     flex-direction: row;
@@ -246,16 +317,215 @@ iframe {
     border-radius: 20px;
 }
 
-.poema p:nth-child(odd) {
+.poema1 p:nth-child(odd) {
     color: darkred;
     font-style: italic;
 }
 
-.poema p:nth-child(even) {
+.poema1 p:nth-child(even) {
     color: darkblue;
     font-weight: bold;
 }
 
+.poema2 p:nth-child(odd) {
+    color: black;
+    font-style: italic;
+}
+
+.poema2 p:nth-child(even) {
+    color: darkmagenta;
+    font-weight: bold;
+}
+
+.poema3 p:nth-child(odd) {
+    color: green;
+    font-style: italic;
+}
+
+.poema3 p:nth-child(even) {
+    color: orange;
+    font-weight: bold;
+}
+
+.poema4 p:nth-child(odd) {
+    color: purple;
+    font-style: italic;
+}
+
+.poema4 p:nth-child(even) {
+    color: grey;
+    font-weight: bold;
+}
+
+.multimedia main .poemas {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+        'poema1 poema2 poema3 poema4';
+    gap: 20px;
+    align-items: center;
+}
+
+.multimedia main .poema1 {
+    grid-area: poema1;
+}
+
+.multimedia main .poema2 {
+    grid-area: poema2;
+}
+
+.multimedia main .poema3 {
+    grid-area: poema3;
+}
+
+.multimedia main .poema4 {
+    grid-area: poema4;
+}
+
+.multimedia .Video #video {
+    position: relative;
+    top: 20px;
+    font-size: xx-large;
+}
+
 .multimedia iframe {
+    position: relative;
+    top: 50px;
     border-radius: 20px;
+}
+
+.postal p {
+    position: relative;
+    color: black;
+    font-weight: bold;
+    font-size: larger;
+    top: 30px;
+}
+
+.Informação main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+        'infoUtil container'
+        'curiosidades';
+    gap: 20px;
+    align-items: center;
+}
+
+.Informação .container {
+    position: relative;
+    top: 200px;
+}
+
+.Informação .infoUtil {
+    position: relative;
+    top: 100px;
+}
+
+.Informação .curiosidades {
+    position: relative;
+    top: 100px;
+}
+
+.cabeçalho4 {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding-top: 60px;
+    background: whitesmoke;
+    width: 100%;
+    height: 100%;
+}
+
+.infoPage {
+    display: none;
+    font-size: 24px;
+}
+
+.Informação h1 {
+    position: relative;
+    top: -30px;
+    left: 30px;
+}
+
+.Informação nav {
+    position: relative;
+    top: -21px;
+    right: 50px;
+}
+
+.Informação nav a {
+    margin: 0 10px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 2px 3px 3px lightgrey;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.Informação a:hover {
+    color: blue;
+}
+
+@media (max-width: 600px) {
+
+    .cabeçalho4,
+    .Informação nav {
+        flex-direction: column;
+    }
+
+    .Informação nav {
+        display: none;
+    }
+
+    .cabeçalho4:hover nav {
+        display: flex;
+    }
+
+    .Informação {
+        display: block;
+    }
+}
+
+.Informação main {
+    text-align: center;
+}
+
+.Informação footer {
+    position: relative;
+    bottom: -400px;
+    text-align: center;
+}
+
+.Informação nav a {
+    margin: 0 10px;
+    text-decoration-style: none;
+    color: black;
+}
+
+.Informação table,
+th,
+td {
+    padding: 5px;
+    border: 1px solid black;
+
+}
+
+.Informação th {
+    color: rgb(68, 2, 2);
+    font-style: italic;
+}
+
+.Informação td {
+    color: brown;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+#tabela {
+    font-weight: bold;
 }

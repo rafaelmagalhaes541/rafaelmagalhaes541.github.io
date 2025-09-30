@@ -4,48 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Alemanha-Munique</title>
-    <style>
-        body {
-            text-align: center;
-        }
-
-        nav a {
-            margin: 0 10px;
-            text-decoration-style: none;
-            color: black;
-        }
-
-        table,
-        th,
-        td {
-            padding: 5px;
-            border: 1px solid black;
-
-        }
-
-        th {
-            color: rgb(68, 2, 2);
-            font-style: italic;
-        }
-
-        td {
-            color: brown;
-        }
-
-        .container {
-            display: flex;
-            justify-content: center;
-        }
-
-        #tabela {
-            font-weight: bold;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-    <header>
-        <h1>MUNIQUE</h1>
+<body class="Informação">
+    <header class="cabeçalho4">
+        <h1><span>MUNIQUE</span> <span class="infoPage">&#9776;</span></h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="local.html">Localização</a>
@@ -54,15 +18,15 @@
         </nav>
     </header>
     <main>
-        <h2>Informações</h2>
-        <p>Munique, capital da Baviera, é uma das cidades mais marcantes da Alemanha.</p>
-        <p>Conhecida pela Marienplatz e pelo seu carrilhão, pelos palácios Residenz e Nymphenburg,</p>
-        <p>e pelo mundialmente famoso Oktoberfest, a cidade combina história, cultura e inovação.</p>
-        <p>Além de centro económico e tecnológico, destaca-se pela sua qualidade de vida e pela proximidade com os Alpes
-            bávaros,</p>
-        <p>que a tornam um destino privilegiado para turistas e residentes.</p>
+        <div class="infoUtil">
+            <h2>Informações</h2>
+            <p>Munique, capital da Baviera, é uma das cidades mais marcantes da Alemanha.</p>
+            <p>Conhecida pela Marienplatz e pelo seu carrilhão, pelos palácios Residenz e Nymphenburg,</p>
+            <p>e pelo mundialmente famoso Oktoberfest, a cidade combina história, cultura e inovação.</p>
+            <p>Além de centro económico e tecnológico, destaca-se pela sua qualidade de vida e pela proximidade com os Alpes bávaros,</p>
+            <p>que a tornam um destino privilegiado para turistas e residentes.</p>
+        </div>
 
-        <p id="tabela">Aqui estão algumas estatisticas sobre a cidade:</p>
         <div class="container">
             <table>
                 <tr>
@@ -93,14 +57,17 @@
                 </tr>
             </table>
         </div>
-        <h3>Curiosidades sobre Munique</h3>
-        <ul>
-            <li>Munique é a terceira maior cidade da Alemanha, depois de Berlim e Hamburgo.</li>
-            <li>É famosa pelo festival Oktoberfest, o maior festival de cerveja do mundo.</li>
-            <li>Possui mais de 40 museus, incluindo o Deutsches Museum, um dos maiores museus de ciência e tecnologia.</li>
-            <li>A cidade é cercada pelos Alpes Bávaros, oferecendo muitas opções de atividades ao ar livre.</li>
-            <li>Munique tem uma das maiores redes de transporte público da Alemanha.</li>
-        </ul>
+        <div class="curiosidades">
+            <h3>Curiosidades sobre Munique</h3>
+            <ul>
+                <li>Munique é a terceira maior cidade da Alemanha, depois de Berlim e Hamburgo.</li>
+                <li>É famosa pelo festival Oktoberfest, o maior festival de cerveja do mundo.</li>
+                <li>Possui mais de 40 museus, incluindo o Deutsches Museum, um dos maiores museus de ciência e
+                    tecnologia.</li>
+                <li>A cidade é cercada pelos Alpes Bávaros, oferecendo muitas opções de atividades ao ar livre.</li>
+                <li>Munique tem uma das maiores redes de transporte público da Alemanha.</li>
+            </ul>
+        </div>
     </main>
     <footer>
         <p>DIW 2025</p>
