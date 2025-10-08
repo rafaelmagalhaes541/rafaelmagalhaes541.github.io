@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formulário</title>
+    <script src="scripts/main.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <h1 class="Titulo" onmouseover="passaPorAqui()" onmouseout="naoEstaAqui()">Passa por aqui!</h1>
+    <section>
+        <p class="frase">Pinta-me da cor que desejares!</p>
+        <div class="butoes">
+            <button onclick="mudaCor('Red')">Red</button>
+            <button onclick="mudaCor('Purple')">Purple</button>
+            <button onclick="mudaCor('Orange')">Orange</button>
+        </div>
+    </section>
+    <section>
+        <p id="interacaoRato" onmousemove="movimentoRato()">Mexe o rato por cim de mim...</p>
+        <input type="text">
+    </section>
+    <section>
+        <p>Escolhe uma cor em inglês:</p>
+        <input type="text">
+        <input type="submit" value="submeter">
+    </section>
+    <section ondblclick="conta()">
+        <p class="contador">Conta!</p>
+    </section>
+    <img src="images/fotografia.png" alt="">
+</body>
+</html>

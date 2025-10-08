@@ -111,6 +111,7 @@ footer {
 #Navegacao li:nth-child(2){
     position: relative;
     top: 100px;
+    left: 263px;
 }
 
 #Navegacao li:nth-child(3){
@@ -121,6 +122,11 @@ footer {
 #Navegacao li:nth-child(1){
     position: relative;
     left: 200px;
+}
+
+#Navegacao li:nth-child(4){
+    position: relative;
+    right: -200px;
 }
 
 #Navegacao li:hover {
