@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        main {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+            justify-content: center;
+
+            background: purple;
+        }
+        section{
+            width: 350px;
+            background: whitesmoke;
+            padding: 15px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="idPassa">
+            <p>1. Passa por aqui!</p>
+
+            <script>
+                const frase = document.querySelector('#idPassa p');
+
+                function mudarFrase(modo){
+                    if(modo){
+                        frase.textContent = "1. Obrigada por passares!"; 
+                    }else{
+                        frase.textContent = "1. Passa por aqui!";
+                    }
+                }
+
+                frase.onmouseover = () => {mudarFrase(true)};
+                frase.onmouseout = () => {mudarFrase(false)};
+            </script>
+        </section>
+
+        <section id="idPinta">
+            <p>2. Pinta-me!</p>
+            <button>Red</button>
+            <button>Green</button>
+            <button>Blue</button>
+
+            <script>
+                const botaoRed = document.querySelector('#idPinta button:nth-child(2)');
+                const botaoGreen = document.querySelector('#idPinta button:nth-child(3)');
+                const botaoBlue = document.querySelector('#idPinta button:nth-child(4)');
+
+                const paragrafo = document.querySelector('#idPinta p');
+
+                function mudaCor(cor){
+                    paragrafo.style.color = cor;
+                }
+
+                botaoRed.onclick = () => mudaCor('red');
+                botaoGreen.onclick = () => mudaCor('green');
+                botaoBlue.onclick = () => mudaCor('blue');
+
+            </script>
+        </section>
+
+        <section id="festaCores">
+            <p>3. Experimenta escrever...</p>
+            <input type="text">
+
+            <script>
+                const caixa = document.querySelector('#festaCores input');
+
+                const cores = ['red', 'green', 'blue']
+                let i = 0
+                function coresFesta(){
+                    caixa.style.backgroundColor = cores[i];
+                    i++;
+                    if (i > 3) i = 0;
+                }
+
+                caixa.onkeyup = coresFesta;
+            </script>
+        </section>
+
+        <section id="idEscreveCor">
+            <label for="selectCor">4. Escolha uma cor:</label>
+            <select id="selectCor">
+                <option value="white">White</option>
+                <option value="lightblue">Blue</option>
+                <option value="lightyellow">Yellow</option>
+            </select>
+
+            <script>
+                document.querySelector('select').onchange = function() {
+                    document.querySelector('main').style.backgroundColor = this.value;
+                }
+            </script>
+        </section>
+
+        <section id="idConta">
+            <button id="btnConta">Conta!</button>
+            <p class="small" id="valorConta">78</p>
+
+            <script>
+                const btnConta = document.querySelector('#idConta #btnConta');
+                const valorConta = document.querySelector('#idConta #valorConta');
+
+                let contador = 0;
+                function atualizaMostrador(){
+                    valorConta.textContent = contador;
+                }
+                btnConta.onclick = function(){
+                    contador += 1; 
+                    atualizaMostrador();
+                }
+               
+                atualizaMostrador();
+            </script>
+        </section>
+
+        <section id="idPessoa" style="flex-direction: column; align-items: flex-start;">
+            <div style="display:flex; width:100%; gap:8px; align-items:center;">
+                <input type="text" id="nomePessoa">
+                <input type="number" id="idadePessoa" style="width:80px;">
+                <button id="btnEnviarPessoa">Submit</button>
+            </div>
+            <p id="mensagemPessoa"></p>
+
+            <script>
+                const inputNome = document.querySelector('#idPessoa #nomePessoa');
+                const inputIdade = document.querySelector('#idPessoa #idadePessoa');
+                const btnEnviar = document.querySelector('#idPessoa #btnEnviarPessoa');
+                const mensagem = document.querySelector('#idPessoa #mensagemPessoa');
+
+                btnEnviar.onclick = function(e){
+                    const nome = inputNome.value.trim() || '---';
+                    const idade = parseInt(inputIdade.value, 10);
+                    mensagem.textContent = `Olá, o ${nome} tem ${idade}!`;
+                }
+            </script>
+        </section>
+
+        <section id="idAuto">
+            <p>7. Contador Automático</p>
+            <p id="mostradorAuto">17</p>
+
+            <script>
+                const mostradorAuto = document.querySelector('#idAuto #mostradorAuto');
+                let auto = 0; 
+
+                function atualizaAuto(){
+                    mostradorAuto.textContent = auto;
+                }
+                
+                setInterval(function(){
+                    auto += 1;
+                    atualizaAuto();
+                }, 1000);
+
+                atualizaAuto();
+            </script>
+        </section>
+    </main>
+</body>
+</html>
