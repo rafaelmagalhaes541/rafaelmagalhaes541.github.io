@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: whitesmoke;
 }
 
 /*-------Cabeçálho-------*/
@@ -50,10 +51,55 @@ header nav a:hover {
 /*-------------------------------------*/
 
 /*-------Produtos-------*/
-#produtos{
-    height: 100vh;
+
+#produtos {
+    min-height: 100vh;
     background-color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;           /* permite quebrar linha */
+    gap: 15px;                 /* espaço entre cards */
+    justify-content: center;   /* centra os cards */
+    padding: 40px 0;           /* espaço acima e abaixo */
 }
+
+/* Cada produto */
+#produtos article {
+    width: 220px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 12px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Título do produto */
+#produtos article h3 {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Imagem do produto */
+#produtos article img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+/* Descrição */
+#produtos article p {
+    margin: 6px 0;
+    color: #555;
+}
+
+/* Preço */
+#produtos article p:last-child {
+    font-weight: bold;
+    color: #000;
+    font-size: 15px;
+}
+
 /*-------------------------------------*/
 
 /*-------Carrinho-------*/
