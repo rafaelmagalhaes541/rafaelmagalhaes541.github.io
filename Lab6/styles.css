@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*-------Cabeçálho-------*/
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 100px;
+    background-color: wheat;
+}
+
+h1 {
+    margin: 20px;
+    margin-top: 25px;
+}
+
+nav {
+    position: absolute;
+    right: 60px;
+    top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    position: relative;
+    top: 30px;
+    padding: 10px 30px;
+    background-color: pink;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+header nav a:hover {
+    background-color: hotpink;
+    color: white;
+    transition: 0.6s;
+}
+/*-------------------------------------*/
+
+/*-------Produtos-------*/
+#produtos{
+    height: 100vh;
+    background-color: whitesmoke;
+}
+/*-------------------------------------*/
+
+/*-------Carrinho-------*/
+#carrinho{
+    height: 100vh;
+    background-color: wheat;
+}
+/*-------------------------------------*/
+
+/*-------Rodapé-------*/
+footer{
+    height: 30vh;
+    background-color: whitesmoke;
+}
