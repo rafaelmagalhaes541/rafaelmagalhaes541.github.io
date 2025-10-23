@@ -108,30 +108,22 @@ footer {
     height: 50px;
 }
 
-#Navegacao li:nth-child(2){
-    position: relative;
-    top: 100px;
-    left: 263px;
+#Navegacao {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+  display: flex;
+  flex-wrap: wrap;          
+  gap: 2.5rem;              
+  justify-content: center;  
+  align-items: center;
+  max-width: 1100px;        
+  width: 100%;
 }
 
-#Navegacao li:nth-child(3){
-    position: relative;
-    right: 200px;
-}
-
-#Navegacao li:nth-child(1){
-    position: relative;
-    left: 200px;
-}
-
-#Navegacao li:nth-child(4){
-    position: relative;
-    right: -200px;
-}
-
-#Navegacao li:nth-child(5){
-    position: relative;
-    top: 100px;
+#Navegacao li {
+  flex: 0 1 340px;          
 }
 
 #Navegacao li:hover {
