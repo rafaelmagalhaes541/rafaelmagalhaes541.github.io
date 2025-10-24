@@ -14,6 +14,11 @@ header {
     background-color: wheat;
 }
 
+main h2{
+    position: absolute;
+    left: 625px;
+}
+
 h1 {
     margin: 20px;
     margin-top: 25px;
@@ -56,14 +61,15 @@ header nav a:hover {
     min-height: 100vh;
     background-color: whitesmoke;
     display: flex;
-    flex-wrap: wrap;           /* permite quebrar linha */
-    gap: 15px;                 /* espaço entre cards */
-    justify-content: center;   /* centra os cards */
-    padding: 40px 0;           /* espaço acima e abaixo */
+    flex-wrap: wrap;           
+    gap: 15px;                
+    justify-content: center;  
+    padding: 40px 0;           
 }
 
 /* Cada produto */
 #produtos article {
+    margin-top: 30px;
     width: 220px;
     border: 1px solid #ddd;
     border-radius: 10px;
