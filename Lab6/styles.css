@@ -16,7 +16,7 @@ header {
 
 main h2{
     position: absolute;
-    left: 625px;
+    left: 825px;
 }
 
 h1 {
@@ -112,6 +112,8 @@ header nav a:hover {
 #carrinho{
     height: 100vh;
     background-color: wheat;
+    display: flex;
+    flex-wrap: wrap;
 }
 /*-------------------------------------*/
 
