@@ -88,12 +88,9 @@ function mostrarCarrinho() {
 function removerDoCarrinho(produto) {
     let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
 
-    // Filtrar o carrinho removendo o produto clicado (comparando pelo id, se existir)
     carrinho = carrinho.filter(p => p.id !== produto.id);
 
-    // Atualizar o localStorage
     localStorage.setItem('carrinho', JSON.stringify(carrinho));
 
-    // Atualizar a visualização do carrinho
     mostrarCarrinho();
 }
