@@ -14,9 +14,9 @@ header {
     background-color: wheat;
 }
 
-main h2{
-    position: absolute;
-    left: 825px;
+main h2 {
+    display: flex;
+    justify-content: center;
 }
 
 h1 {
@@ -53,6 +53,7 @@ header nav a:hover {
     color: white;
     transition: 0.6s;
 }
+
 /*-------------------------------------*/
 
 /*-------Produtos-------*/
@@ -61,20 +62,18 @@ header nav a:hover {
     min-height: 100vh;
     background-color: whitesmoke;
     display: flex;
-    flex-wrap: wrap;           
-    gap: 15px;                
-    justify-content: center;  
-    padding: 40px 0;           
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 40px 0;
 }
 
 /* Cada produto */
 #produtos article {
-    margin-top: 30px;
     width: 220px;
-    border: 1px solid #ddd;
     border-radius: 10px;
     padding: 12px;
-    background-color: #f9f9f9;
+    background-color: wheat;
     text-align: center;
 }
 
@@ -109,16 +108,37 @@ header nav a:hover {
 /*-------------------------------------*/
 
 /*-------Carrinho-------*/
-#carrinho{
-    height: 100vh;
-    background-color: wheat;
+#carrinho {
+    min-height: 400px;
     display: flex;
+    background-color: wheat;
     flex-wrap: wrap;
+    gap: 30px;
 }
+
+#carrinho h2 {
+    position: relative;
+    left: 650px;
+}
+
+#carrinho article {
+    margin: 70px 0px;
+    border-radius: 10px;
+    padding: 12px;
+    height: 450px;
+    background-color: white;
+    text-align: center;
+}
+
+#carrinho p:last-child {
+    margin-top: auto;
+    justify-content: center;
+}
+
 /*-------------------------------------*/
 
 /*-------Rodapé-------*/
-footer{
+footer {
     height: 30vh;
     background-color: whitesmoke;
 }

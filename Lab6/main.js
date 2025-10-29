@@ -58,7 +58,11 @@ function mostrarCarrinho() {
 
     secCarrinho.innerHTML = "";
 
-    carrinho.forEach(p => {
+    const titulo1 = document.createElement("h2");
+    titulo1.textContent = "Produtos Selecionados";
+    secCarrinho.appendChild(titulo1);
+
+    carrinho.forEach((p, index) => { 
         const item = document.createElement("article");
 
         const titulo = document.createElement("h3");
@@ -73,7 +77,7 @@ function mostrarCarrinho() {
 
         const botaoRemover = document.createElement("button");
         botaoRemover.textContent = "Remover do Carrinho";
-        botaoRemover.addEventListener("click", () => removerDoCarrinho(p));
+        botaoRemover.addEventListener("click", () => removerDoCarrinho(index));
 
         item.append(titulo, imagem, preco, botaoRemover);
         secCarrinho.append(item);
@@ -85,12 +89,11 @@ function mostrarCarrinho() {
     secCarrinho.append(totalEl);
 }
 
-function removerDoCarrinho(produto) {
+function removerDoCarrinho(index) {
     let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
 
-    carrinho = carrinho.filter(p => p.id !== produto.id);
+    carrinho.splice(index, 1);
 
     localStorage.setItem('carrinho', JSON.stringify(carrinho));
-
     mostrarCarrinho();
 }
