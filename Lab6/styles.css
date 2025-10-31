@@ -14,14 +14,20 @@ header {
     background-color: wheat;
 }
 
-main h2 {
-    display: flex;
-    justify-content: center;
-}
-
 h1 {
     margin: 20px;
     margin-top: 25px;
+}
+
+#tituloNum1 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#tituloNum2 {
+    position: relative;
+    top: 80px;
+    text-align: center;
 }
 
 nav {
@@ -59,20 +65,24 @@ header nav a:hover {
 /*-------Produtos-------*/
 
 #produtos {
-    min-height: 100vh;
+    margin-top: 20px;
     background-color: whitesmoke;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-    padding: 40px 0;
+    display: grid;
+    /* ativa o grid layout */
+    grid-template-columns: repeat(4, 1fr);
+    /* 3 colunas iguais */
+    gap: 20px;
+    /* espaçamento entre os produtos */
+    justify-items: center;
+    /* centra os artigos dentro das colunas */
+    padding: 40px 100px;
 }
 
 /* Cada produto */
 #produtos article {
-    width: 220px;
+    width: 320px;
     border-radius: 10px;
-    padding: 12px;
+    padding: 20px;
     background-color: wheat;
     text-align: center;
 }
@@ -100,8 +110,9 @@ header nav a:hover {
 
 /* Preço */
 #produtos article p:last-child {
-    font-weight: bold;
-    color: #000;
+    margin-top: 6px;
+    font-weight: bolder;
+    color: blue;
     font-size: 15px;
 }
 
@@ -110,10 +121,11 @@ header nav a:hover {
 /*-------Carrinho-------*/
 #carrinho {
     min-height: 400px;
-    display: flex;
     background-color: wheat;
-    flex-wrap: wrap;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    padding: 40px 80px;
 }
 
 #carrinho h2 {
@@ -130,15 +142,16 @@ header nav a:hover {
     text-align: center;
 }
 
-#carrinho p:last-child {
-    margin-top: auto;
-    justify-content: center;
+#preco {
+    text-align: center;
+    margin-top: -70px;
+    font-weight: bold;
+    font-size: x-large;
 }
-
 /*-------------------------------------*/
 
 /*-------Rodapé-------*/
 footer {
-    height: 30vh;
+    height: 10vh;
     background-color: whitesmoke;
 }

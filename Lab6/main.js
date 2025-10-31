@@ -4,8 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function carregarProdutos(produtos) {
-    const secaoProdutos = document.querySelector("#produtos");
-    secaoProdutos.innerHTML = ""; 
+    const secaoProdutos = document.querySelector("#produtos"); 
 
     produtos.forEach(produto => {
         const artigo = criarProduto(produto);
@@ -53,14 +52,11 @@ function adicionarAoCarrinho(produto) {
 }
 
 function mostrarCarrinho() {
+    const idPreco = document.querySelector("#preco")
     const secCarrinho = document.querySelector("#carrinho");
     const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
 
     secCarrinho.innerHTML = "";
-
-    const titulo1 = document.createElement("h2");
-    titulo1.textContent = "Produtos Selecionados";
-    secCarrinho.appendChild(titulo1);
 
     carrinho.forEach((p, index) => { 
         const item = document.createElement("article");
@@ -83,10 +79,12 @@ function mostrarCarrinho() {
         secCarrinho.append(item);
     });
 
+    idPreco.innerHTML = ""
+    
     const total = carrinho.reduce((soma, p) => soma + p.price, 0);
     const totalEl = document.createElement("p");
     totalEl.textContent = `Total: €${total}`;
-    secCarrinho.append(totalEl);
+    idPreco.append(totalEl);
 }
 
 function removerDoCarrinho(index) {
