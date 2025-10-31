@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+
+/*-------Cabeçálho-------*/
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 100px;
+    background-color: wheat;
+}
+
+h1 {
+    margin: 20px;
+    margin-top: 25px;
+}
+
+#tituloNum1 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#tituloNum2 {
+    position: relative;
+    top: 80px;
+    text-align: center;
+}
+
+nav {
+    position: absolute;
+    right: 60px;
+    top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    position: relative;
+    top: 30px;
+    padding: 10px 30px;
+    background-color: pink;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+header nav a:hover {
+    background-color: hotpink;
+    color: white;
+    transition: 0.6s;
+}
+
+/*-------------------------------------*/
+
+/*-------Produtos-------*/
+
+#produtos {
+    margin-top: 20px;
+    background-color: whitesmoke;
+    display: grid;
+    /* ativa o grid layout */
+    grid-template-columns: repeat(4, 1fr);
+    /* 3 colunas iguais */
+    gap: 20px;
+    /* espaçamento entre os produtos */
+    justify-items: center;
+    /* centra os artigos dentro das colunas */
+    padding: 40px 100px;
+}
+
+/* Cada produto */
+#produtos article {
+    width: 320px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: wheat;
+    text-align: center;
+}
+
+/* Título do produto */
+#produtos article h3 {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Imagem do produto */
+#produtos article img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+/* Descrição */
+#produtos article p {
+    margin: 6px 0;
+    color: #555;
+}
+
+/* Preço */
+#produtos article p:last-child {
+    margin-top: 6px;
+    font-weight: bolder;
+    color: blue;
+    font-size: 15px;
+}
+
+/*-------------------------------------*/
+
+/*-------Carrinho-------*/
+#carrinho {
+    min-height: 400px;
+    background-color: wheat;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    padding: 40px 80px;
+}
+
+#carrinho h2 {
+    position: relative;
+    left: 650px;
+}
+
+#carrinho article {
+    margin: 70px 0px;
+    border-radius: 10px;
+    padding: 12px;
+    height: 450px;
+    background-color: white;
+    text-align: center;
+}
+
+#preco {
+    text-align: center;
+    margin-top: -70px;
+    font-weight: bold;
+    font-size: x-large;
+}
+/*-------------------------------------*/
+
+/*-------Rodapé-------*/
+footer {
+    height: 10vh;
+    background-color: whitesmoke;
+}
